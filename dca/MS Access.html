@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan - MS Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/content-protection.js"></script>
+    <style>
+        @media (max-width: 640px) {
+            .table-container {
+                -webkit-overflow-scrolling: touch;
+            }
+            table {
+                font-size: 0.75rem;
+            }
+        }
+        tr:hover {
+            background-color: #f0f9ff;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f9ff;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 min-h-screen py-4 sm:py-8 px-2 sm:px-4">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Title Section -->
+        <div class="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 border-b-4 border-yellow-600 py-4 sm:py-6 px-4 sm:px-6">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900">
+                Lesson Plan - MS Access
+            </h1>
+        </div>
+
+        <!-- Table Section -->
+        <div class="overflow-x-auto table-container">
+            <table class="w-full border-collapse">
+                <thead class="sticky top-0 z-10">
+                    <tr>
+                        <th class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">SL NO</th>
+                        <th class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">Menu/Module</th>
+                        <th class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">Session</th>
+                        <th class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 text-center shadow-md">Detailed Sub-Topics</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <!-- Module 1: Introduction to MS-Access -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="6">1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="6">Introduction to MS-Access</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Introduction to Databases; RDBMS vs DBMS; When to use MS Access</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Access Interface Deep Dive: Ribbon, Navigation Pane, Status Bar, Views</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Database Objects Overview (Tables, Queries, Forms, Reports, Macros, Modules)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Creating Blank & Templates Databases; Naming Conventions</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Access Options: Startup Settings, AutoCorrect Options, File Management</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">1.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Database Design Principles: Normalization (1NF–3NF), Avoiding Redundancy</td>
+                    </tr>
+
+                    <!-- Module 2: Tables & Data Types -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Tables & Data Types</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Creating Tables: Datasheet & Design View (Deep Practical)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Advanced Data Types: Rich Text, OLE, Attachments, Calculated Fields, Hyperlink</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Field Properties: Format, Input Mask Wizard, Field Size Optimization</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Lookup Wizard: Single/Multiple Value Lookups</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Indexing Fields to Improve Performance</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Advanced Constraints: Validation Rule, Validation Text, Required, Default Values</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">2.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Table Analyzer & Normalization Tool</td>
+                    </tr>
+
+                    <!-- Module 5: Forms (User Interface Design) -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Forms (User Interface Design)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Creating Forms: Wizard, Design, Split Forms & Navigation Forms</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Controls: Text, Combo, List Box, Subforms, Tab Control</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Form Events: On Load, On Current, Before Update, After Update</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Conditional Formatting in Forms</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Creating Search Forms with Filters</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Form Navigation, Menu Forms & Dashboard Creation</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">5.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800">Linked Forms & Modal Dialog Forms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
