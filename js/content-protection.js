@@ -1,7 +1,6 @@
 /**
  * Content Protection Script
  * Prevents copying, printing, inspecting, screenshots, and view-source attempts
- * Include in every page: <script src="js/content-protection.js"></script>
  */
 
 (function () {
@@ -76,18 +75,34 @@
     });
 
     // Detect DevTools via viewport difference
+    // Detect DevTools via viewport difference
     var devToolsOpen = false;
+    var warningOverlay = null;
+
     setInterval(function () {
+        // Skip check on mobile devices to prevent false positives (zooming on iOS triggers this)
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) return;
+
         if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
             if (!devToolsOpen) {
                 devToolsOpen = true;
-                document.body.innerHTML =
-                    '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;font-size:1.2rem;color:#111;">' +
-                    'Developer tools detected. Please close DevTools to continue.' +
-                    '</div>';
+                if (!warningOverlay) {
+                    warningOverlay = document.createElement('div');
+                    // Ensure it covers everything and blocks interaction
+                    warningOverlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:sans-serif;font-size:1.2rem;color:#111;';
+                    warningOverlay.textContent = 'Developer tools detected. Please close DevTools to continue.';
+                    document.body.appendChild(warningOverlay);
+                }
+                warningOverlay.style.display = 'flex';
             }
         } else {
-            devToolsOpen = false;
+            if (devToolsOpen) {
+                devToolsOpen = false;
+                if (warningOverlay) {
+                    warningOverlay.style.display = 'none';
+                }
+            }
         }
     }, 500);
 

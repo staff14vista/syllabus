@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan - MySQL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/content-protection.js"></script>
+    <style>
+        @media (max-width: 640px) {
+            .table-container {
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                font-size: 0.75rem;
+            }
+        }
+
+        tr:hover {
+            background-color: #f0f9ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f9ff;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 min-h-screen py-4 sm:py-8 px-2 sm:px-4">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Title Section -->
+        <div
+            class="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 border-b-4 border-yellow-600 py-4 sm:py-6 px-4 sm:px-6">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900">
+                Lesson Plan - MySQL
+            </h1>
+        </div>
+
+        <!-- Table Section -->
+        <div class="overflow-x-auto table-container">
+            <table class="w-full border-collapse">
+                <thead class="sticky top-0 z-10 border border-yellow-600">
+                    <tr>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">
+                            SL NO</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 text-center shadow-md border border-yellow-600">
+                            Menu/Module</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 text-center shadow-md border border-yellow-600">
+                            Session</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 text-center shadow-md border border-yellow-600">
+                            Detailed Sub-Topics</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <!-- Module 1: Introduction to Databases & MySQL -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="5">1</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="5">Introduction to Databases & MySQL</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">1.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Understand the
+                            concept of Databases, DBMS vs RDBMS, Real-world applications of MySQL</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">1.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Overview of MySQL: History, Features, Editions (Community & Enterprise)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">1.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Understanding MySQL Architecture: Server, Client Tools, and Components</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">1.4
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Installing MySQL Server and MySQL Workbench; Exploring the MySQL Command-Line Interface</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">1.5
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Creating and Connecting to a Database; Basic MySQL Environment Setup</td>
+                    </tr>
+
+                    <!-- Module 2: Database Design Fundamentals -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="5">2</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="5">Database Design Fundamentals</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">2.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Understanding
+                            Data Models: Hierarchical, Network, and Relational</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">2.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Key Concepts: Entities, Attributes, Relationships</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">2.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Introduction to ER Diagrams (Entity-Relationship Diagrams)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">2.4
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Understanding Primary Keys, Foreign Keys, and Composite Keys</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">2.5
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Concept of Normalization (1NF, 2NF, 3NF) and its Importance in Design</td>
+                    </tr>
+
+                    <!-- Module 3: SQL Basics & Syntax Rules -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="3">3</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="3">SQL Basics & Syntax Rules</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">3.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Introduction to
+                            SQL Language and Categories: DDL, DML, DCL, TCL</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">3.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Understanding SQL Syntax, Statements, and Clauses</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">3.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Using MySQL Workbench Query Editor; Executing Basic SQL Commands</td>
+                    </tr>
+
+                    <!-- Module 4: Data Definition Language (DDL) -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="4">4</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="4">Data Definition Language (DDL)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">4.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Creating
+                            Databases and Tables (CREATE DATABASE, CREATE TABLE)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">4.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Modifying Structures (ALTER TABLE, RENAME TABLE)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">4.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Dropping Databases and Tables (DROP, TRUNCATE)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">4.4
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Understanding Data Types (Numeric, String, Date/Time, Boolean)</td>
+                    </tr>
+
+                    <!-- Module 5: Data Manipulation Language (DML) -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="4">5</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="4">Data Manipulation Language (DML)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">5.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Inserting Data
+                            (INSERT INTO), Using Multiple Rows and Default Values</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">5.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Updating and Deleting Records (UPDATE, DELETE)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">5.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Retrieving Data (SELECT), Understanding WHERE, ORDER BY, LIMIT</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">5.4
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Using DISTINCT, BETWEEN, IN, LIKE, and IS NULL Conditions</td>
+                    </tr>
+
+                    <!-- Module 6: Constraints and Keys -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="2">6</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="2">Constraints and Keys</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">6.2
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Defining
+                            Primary Key and Foreign Key Relationships</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">6.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Enforcing Referential Integrity with ON DELETE and ON UPDATE Options</td>
+                    </tr>
+
+                    <!-- Module 7: Operators and Expressions -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="3">7</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="3">Operators and Expressions</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">7.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Arithmetic,
+                            Comparison, and Logical Operators</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">7.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Using String and Date Functions (CONCAT(), SUBSTRING(), NOW(), DATE_ADD())</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">7.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Using Mathematical and Aggregate Functions (SUM(), AVG(), COUNT(), MIN(), MAX())</td>
+                    </tr>
+
+                    <!-- Module 8: Filtering, Sorting, and Grouping Data -->
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border border-gray-300"
+                            rowspan="3">8</td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm border border-gray-300 text-gray-900"
+                            rowspan="3">Filtering, Sorting, and Grouping Data</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">8.1
+                        </td>
+                        <td class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm text-gray-800 border border-gray-300">Using WHERE,
+                            AND, OR, and NOT Conditions for Filtering</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">8.2
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Sorting Data using ORDER BY and Aliases</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm text-gray-800 border border-gray-300 text-center">8.3
+                        </td>
+                        <td
+                            class="font-bold py-2 sm:py-3 px-2 sm:px-3 text-xs sm:text-sm border border-gray-300 text-left text-gray-800">
+                            Grouping Data with GROUP BY, Filtering Groups using HAVING</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
