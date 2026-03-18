@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan - MS Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/content-protection.js"></script>
+    <style>
+        @media (max-width: 640px) {
+            .table-container {
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                font-size: 0.75rem;
+            }
+        }
+
+        tr:hover {
+            background-color: #f0f9ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: #f0f9ff;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 min-h-screen py-4 sm:py-8 px-2 sm:px-4">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Title Section -->
+        <div
+            class="bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 border-b-4 border-yellow-600 py-4 sm:py-6 px-4 sm:px-6">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-900">
+                Lesson Plan - MS Access
+            </h1>
+        </div>
+
+        <!-- Table Section -->
+        <div class="overflow-x-auto table-container">
+            <table class="w-full border-collapse">
+                <thead class="sticky top-0 z-10">
+                    <tr>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">
+                            SL NO</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">
+                            Menu/Module</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 border-r border-yellow-600 text-center shadow-md">
+                            Session</th>
+                        <th
+                            class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 font-bold text-xs sm:text-sm py-3 px-2 sm:px-3 text-center shadow-md">
+                            Detailed Sub-Topics</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="6">1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="6">Introduction to MS-Access</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Introduction to Databases; RDBMS vs DBMS; When to use MS Access</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Access Interface Deep Dive: Ribbon, Navigation Pane, Status Bar, Views</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Database Objects Overview (Tables, Queries, Forms, Reports, Macros, Modules)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Blank & Template Databases; Naming Conventions</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Access Options: Startup Settings, AutoCorrect Options, File Management</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            1.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Database Design Principles: Normalization (1NF–3NF), Avoiding Redundancy</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Tables & Data Types</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Tables: Datasheet & Design View (Deep Practical)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Advanced Data Types: Rich Text, OLE, Attachments, Calculated Fields, Hyperlink</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Field Properties: Format, Input Mask Wizard, Field Size Optimization</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Lookup Wizard: Single/Multiple Value Lookups</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Indexing Fields to Improve Performance</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Advanced Constraints: Validation Rule, Validation Text, Required, Default Values</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            2.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Table Analyzer & Normalization Tool</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="6">3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="6">Relationships</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Relationship Types: One-to-One, One-to-Many, Many-to-Many</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Junction Tables</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Enforcing Referential Integrity</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Cascade Update & Cascade Delete in Detail</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Relationship Window Management & Best Practices</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            3.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Understanding Foreign Keys & Composite Keys</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="10">4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="10">Queries (Basic to Advanced)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Select Queries; Criteria, Sorting, Filtering</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Logical Operators: AND, OR, IN, BETWEEN, LIKE (wildcards)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Expressions & Functions: DateDiff, IIF, &Other Built-in Functions</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Multiple-Table Joins, Inner/Outer Joins, Self Joins</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Parameter Queries & Multi-Value Parameter Queries</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Crosstab Queries with Totaling & Grouping</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Action Queries: Make-Table, Append, Update, Delete</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.8</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Union Queries (Combining Multiple Data Sources)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.9</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Subqueries inside Queries</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            4.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Query Performance Optimization</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Forms (User Interface Design)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Forms: Wizard, Design, Split Forms & Navigation Forms</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Controls: Text, Combo, List Box, Subforms, Tab Control</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Form Events: On Load, On Current, Before Update, After Update</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Conditional Formatting in Forms</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Search Forms with Filters</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Form Navigation, Menu Forms & Dashboard Creation</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            5.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Linked Forms & Modal Dialog Forms</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Reports</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Report Wizard, Design View, Blank Reports</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Grouping, Sorting, Filtering at Report Level</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Calculated Controls: Totals, Count, Sum, Running Sum</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Subreports & Linked Reports</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Report Layout Customization, Themes, Formatting</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Dynamic Reports with Parameters</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            6.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Printing, Exporting (PDF, Excel), Page Setup</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="6">7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="6">Macros (Automation)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Introduction to Macros & Macro Builder</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Actions: OpenForm, RunQuery, MessageBox, SetValue</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Conditional Macros & Embedded Macros</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Data Macros (Field-Level & Table-Level Triggers)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            AutoExec & AutoKeys Macros</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            7.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating a Complete Navigation UI using Macros</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="8">8</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="8">Advanced Tools & Database Management</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Importing/Exporting: Excel, CSV, SQL Server, SharePoint</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Linked Tables & External Data Sources</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Splitting Database: Front-End / Back-End Architecture</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Compact & Repair Database</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Password Protection & Encryption</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Using Access with Cloud Storage (OneDrive/SharePoint)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Multi-user Database Issues & Locking Strategies</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            8.8</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Access Performance Tuning</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="7">9</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="7">Programming with VBA (Expert Module)</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            VBA Editor Overview, Modules, Procedures</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Variables, Data Types, Loops, Conditions</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Working with Forms & Controls using VBA</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Automating Reports & Queries with VBA</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.5</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Error Handling & Debugging</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.6</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Building Custom Functions in VBA</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            9.7</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Database Event Automation</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm font-semibold text-gray-700 border-r border-gray-200" rowspan="4">10</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 font-bold text-center text-xs sm:text-sm text-gray-800 border-r border-gray-200" rowspan="4">Project</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            10.1</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Project Planning, ER Diagram, Schema Design</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            10.2</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Creating Complete Tables, Queries, Forms, Reports</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            10.3</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            Implementing Macros & VBA where needed</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-center text-xs sm:text-sm text-gray-600 border-r border-gray-200">
+                            10.4</td>
+                        <td class="py-2 sm:py-3 px-2 sm:px-3 text-left text-xs sm:text-sm font-semibold text-gray-800">
+                            System Testing & User Documentation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
