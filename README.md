@@ -14,3 +14,8 @@ This repository contains the latest course syllabuses for Vista Educare.
 - `pgdca2/`: Contains HTML and CSS related course materials.
 - `cpp/`, `java/`, `python/`: Course-specific directories with syllabus management pages.
 - `resources/`: Shared assets and stylesheets.
+
+## Recent Updates
+
+- **index.html & UI:** Implemented an ultra premium dark-mode UI with glassmorphism cards, animated backgrounds, and scroll reveal effects.
+- **JavaScript Fixes:** Resolved `MutationObserver` TypeError and body-load bugs in `content-protection.js`.

@@ -80,6 +80,7 @@
     var warningOverlay = null;
 
     setInterval(function () {
+        if (!document.body) return; // Wait until body is ready
         // Skip check on mobile devices to prevent false positives (zooming on iOS triggers this)
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isMobile) return;
@@ -136,18 +137,22 @@
     protectImages(document);
 
     // Observe dynamic images
-    var observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            mutation.addedNodes.forEach(function (node) {
-                if (node.nodeType === 1) {
-                    if (node.matches('img') || node.querySelector('img')) {
-                        protectImages(node.matches('img') ? node.parentNode : node);
+    document.addEventListener('DOMContentLoaded', function () {
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                mutation.addedNodes.forEach(function (node) {
+                    if (node.nodeType === 1) {
+                        if (node.matches('img') || node.querySelector('img')) {
+                            protectImages(node.matches('img') ? node.parentNode : node);
+                        }
                     }
-                }
+                });
             });
         });
+        if (document.body) {
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
     });
-    observer.observe(document.body, { childList: true, subtree: true });
 
     // Console warning
     console.log('%cWarning', 'color: red; font-size: 40px; font-weight: bold;');
